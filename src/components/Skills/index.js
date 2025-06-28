@@ -27,7 +27,7 @@ const Skills = () => (
                             <p>HTML5</p>
                         </div>
                         <div className='linear-progress'>
-                            <hr style={{width:"200px"}}/>
+                            <hr style={{width:"150px"}}/>
                             <p>90%</p>
                         </div>
                         <div style={{ width: 70, height: 70 }} className='circular-bar'>
@@ -52,7 +52,7 @@ const Skills = () => (
                             <p>CSS3</p>
                         </div>
                         <div className='linear-progress'>
-                            <hr style={{width:"200px"}}/>
+                            <hr style={{width:"150px"}}/>
                             <p>90%</p>
                         </div>
                         <div style={{ width: 70, height: 70 }} className='circular-bar'>
@@ -77,7 +77,7 @@ const Skills = () => (
                             <p>JavaScript</p>
                         </div>
                         <div className='linear-progress'>
-                            <hr style={{width:"180px"}}/>
+                            <hr style={{width:"130px"}}/>
                             <p>80%</p>
                         </div>
                         <div style={{ width: 70, height: 70 }} className='circular-bar'>
@@ -102,7 +102,7 @@ const Skills = () => (
                             <p>React JS</p>
                         </div>
                         <div className='linear-progress'>
-                            <hr style={{width:"180px"}}/>
+                            <hr style={{width:"130px"}}/>
                             <p>80%</p>
                         </div>
                         <div style={{ width: 70, height: 70 }} className='circular-bar'>
@@ -130,7 +130,7 @@ const Skills = () => (
                             <p>Node JS</p>
                         </div>
                         <div className='linear-progress'>
-                            <hr style={{width:"200px"}}/>
+                            <hr style={{width:"150px"}}/>
                             <p>90%</p>
                         </div>
                         <div style={{ width: 70, height: 70 }} className='circular-bar'>
@@ -155,7 +155,7 @@ const Skills = () => (
                             <p>MySQL</p>
                         </div>
                         <div className='linear-progress'>
-                            <hr style={{width:"160px"}}/>
+                            <hr style={{width:"110px"}}/>
                             <p>70%</p>
                         </div>
                         <div style={{ width: 70, height: 70 }} className='circular-bar'>
@@ -180,7 +180,7 @@ const Skills = () => (
                             <p>Mongo DB</p>
                         </div>
                         <div className='linear-progress'>
-                            <hr style={{width:"160px"}}/>
+                            <hr style={{width:"110px"}}/>
                             <p>70%</p>
                         </div>
                         <div style={{ width: 70, height: 70 }} className='circular-bar'>
@@ -208,7 +208,7 @@ const Skills = () => (
                             <p>Python</p>
                         </div>
                         <div className='linear-progress'>
-                            <hr style={{width:"180px"}} />
+                            <hr style={{width:"130px"}} />
                             <p>80%</p>
                         </div>
                         <div style={{ width: 70, height: 70 }} className='circular-bar'>

@@ -78,7 +78,7 @@
 
 @media(max-width:768px){
     .skills{
-        margin: 50px 70px;
+        margin: 50px 0px 50px 70px;
         align-items: start;
     }
     .skills-title{
@@ -94,8 +94,8 @@
     }
     .skills-list{
         margin-left: 0;
+        margin-right: 0px;
     }
-
     .skills-list h1{
         font-size: 30px;
         font-weight: 600;
@@ -105,19 +105,34 @@
         gap: 22px;
         justify-content: space-between;
     }
+
+    .frontend-technology p{
+        font-size: 15px;
+    }
     .backend-technology{
         flex-direction: column;
         gap: 22px;
     }
+    .backend-technology p{
+        font-size: 15px;
+    }
+    .programming-language p{
+        font-size: 15px;
+    }
     .circular-bar{
         display: none;
     }
-    
+    .icon{
+        height: 30px;
+        width: 30px;
+    }
     .linear-progress{
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         transition: 0.3s;
+        margin-left: 10px;
     }
     .linear-progress:hover{
         transform: scale(1.1);
@@ -126,7 +141,6 @@
 
     .linear-progress hr{
         border: none;
-        width: 50%;
         outline: none;
         height: 8px;
         border-radius: 50px;
@@ -135,5 +149,11 @@
     }
     .linear-progress p{
         font-size: 18px;
+    }
+    .skill-type{
+        margin-right: 0px;
+    }
+    .logo-container{
+        width: 90px;
     }
 }
