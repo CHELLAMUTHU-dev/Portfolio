@@ -1,25 +1,42 @@
-import logo from './logo.svg';
+import ThemeContext from './context/ThemeContext'
+import { Component } from 'react';
 import './App.css';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills  from './components/Skills';
+import Project from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  state={
+    isDarkTheme: false,
+  }
+
+
+  setTheme = () => {
+    this.setState(prevState => ({
+      isDarkTheme : !prevState.isDarkTheme
+    }))
+  }
+
+  render(){
+    const {isDarkTheme} = this.state
+    return(
+      <ThemeContext.Provider  value={{isDarkTheme,setTheme:this.setTheme}}>
+          <Header/>
+          <Hero/>
+          <About/>
+          <Skills/>
+          <Project/>
+          <Contact/>
+          <Footer/>
+      </ThemeContext.Provider>
+    )
+  }
+
+
 }
 
 export default App;
