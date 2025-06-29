@@ -6,7 +6,10 @@ const Footer = () =>  (
         <div className='footer'> 
             <div className="footer-top">
                 <div className="footer-top-left">
-                    <img src={logo} alt="" />
+                    <div className="footer-logo">
+                        <img src={logo} alt="" />
+                        <p>CHELLA</p>
+                    </div>
                     <p>I am a Full Stack Developer(Fresher) with hands-on experience in building web application using the MERN stack</p>
                 </div>
                 <div className="footer-top-right">

@@ -1,5 +1,4 @@
-import {useContext,useState, useRef} from 'react'
-import ThemeContext from '../../context/ThemeContext'
+import {useState, useRef} from 'react'
 import { RiMenu3Fill } from "react-icons/ri";
 import { MdOutlineClose } from "react-icons/md";
 import './index.css'
@@ -17,8 +16,6 @@ const Header = () => {
     const closeMenu = () => {
         menuRef.current.style.right = '-350px'
     }
-    // const backgroundColor = isDarkTheme ? "black-bg": 'white-bg'
-    // const textColor = isDarkTheme ? " #f9f9f9" : 'rgb(23, 22, 22)'
     return(
         <div className='navbar'>
             <img src={logo} alt=""className='logo' />
