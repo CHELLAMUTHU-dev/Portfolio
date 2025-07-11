@@ -2,25 +2,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
-    margin: 80px 150px;
-    justify-content: center;
+    gap: 20px;
+    justify-content:center;
+    padding: 50px 80px;
+    min-height: 100vh;
 }
 
 .about-title{
     position: relative;
+    margin-bottom: 20px;
 }
 .about-title h1{
     padding: 0px 30px;
-    font-size: 75px;
+    font-size: 70px;
     font-weight: 500;
 }
 .about-title img{
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    right: 0;
-    height: 50px;
+    margin-left: 220px;
+    margin-top: -28px;
+    height: 40px;
 }
 
 .about-section{
@@ -31,12 +31,13 @@
 .about-right{
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 40px;
 }
 
 .about-para{
     font-size: 22px;
     font-weight: 500;
+    line-height: 35px;
 }
 
 
@@ -46,10 +47,53 @@
     width: 250px;
 }
 
+.about-details{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    align-items: center;
+    gap: 40px;
+    @media (max-width:768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    font-size: 18px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 50px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+        padding: 30px 0px;
+    }
+    &:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+.details h1{
+    color: rgb(5, 242, 250);
+}
+
+.black-bg{
+    background-color: #111827fa;
+    color: white;
+}
+
+.white-bg{
+    background-color: white;
+    color: black;
+}
+
+
+
 @media (max-width:768px){
     .about{
-        gap: 80px;
-        margin: 50px 70px;
+        gap: 10px;
         align-items: start;
     }
     .about-title h1{
@@ -57,8 +101,8 @@
         padding: 0;
     }
     .about-title img{
-        width: 130px;
-        right: -20px;
+        width: 80px;
+        margin-left: 130px;
     }
     .about-section{
         flex-direction: column;

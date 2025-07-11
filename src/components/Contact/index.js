@@ -2,13 +2,16 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdEmail ,MdLocationPin, } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
-import { useState } from "react";
+import { useState,useContext } from "react";
+import {ThemeContext} from '../../context/ThemeContext'
 import './index.css'
 
 import theme_pattern from '../../assets/theme_pattern.svg'
 
 const Contact = () =>  {
     
+    const {theme} = useContext(ThemeContext);
+    const bgColor = theme === "dark" ? "contact-black-bg" : "contact-white-bg";
     const [result, setResult] =useState("");
 
     const onSubmit = async (event) => {
@@ -39,7 +42,7 @@ const Contact = () =>  {
         setResult(data.message);
     }}
     return(
-        <div id='contact' className="contact">
+        <div id='contact' className={`contact ${bgColor}`}>
             <div className="contact-title">
                 <h1>Get in touch</h1>
                 <img src={theme_pattern} alt="" />
@@ -56,10 +59,10 @@ const Contact = () =>  {
                             <BiSolidPhoneCall/><p>+91 8870926742</p>
                         </div>
                         <div className="contact-detail">
-                                <BsLinkedin/><a href="https://www.linkedin.com/in/chellamuthumarip/" target="_blank" rel='noreferrer'>https://www.linkedin.com/in/chellamuthumarip</a>
+                                <BsLinkedin/><a href="https://www.linkedin.com/in/chellamuthumarip/" style={{color: theme === "dark" ? "white" : "black"}} target="_blank" rel='noreferrer'>https://www.linkedin.com/in/chellamuthumarip</a>
                         </div>
                         <div className="contact-detail">
-                                <FaGithub/><a href="https://github.com/" target="_blank" rel='noreferrer'>https://github.com</a>
+                                <FaGithub/><a href="https://github.com/" target="_blank" rel='noreferrer' style={{color: theme === "dark" ? "white" : "black"}}>https://github.com</a>
                         </div>
                         <div className="contact-detail">
                                 <MdLocationPin/><p>Tirumangalam , Madurai, TamilNadu </p>
@@ -67,12 +70,12 @@ const Contact = () =>  {
                     </div>
                 </div>
                 <form onSubmit={onSubmit} className="contact-right">
-                    <label htmlFor="">Your Name</label>
-                    <input type="text" placeholder="Enter your name" name='name' />
+                    <label htmlFor="" >Your Name</label>
+                    <input type="text" placeholder="Enter your name" name='name' style={{backgroundColor: theme === "dark" ? "white" : "#b1aeae5a"}} />
                     <label htmlFor="">Your Email</label>
-                    <input type="email" name="email"  placeholder="Enter your email" />
+                    <input type="email" name="email"  placeholder="Enter your email" style={{backgroundColor: theme === "dark" ? "white" : "#b1aeae5a"}} />
                     <label htmlFor="">Write your message here</label>
-                    <textarea name="message" rows='8' placeholder="Enter your message"></textarea>
+                    <textarea name="message" rows='8' placeholder="Enter your message" style={{backgroundColor: theme === "dark" ? "white" : "#b1aeae5a"}}></textarea>
                     <button type='submit' className="contact-submit">
                         Submit now
                     </button>

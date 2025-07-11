@@ -1,17 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root{
+  --text-primary: #f9faf7;
+  --text-secondary: #c0c0c0;
+  --text-third: hwb(196 95% 1%);
+  --text-last:hwb(320 87% 12% / 0.332);
+  --bg-primary: #1f2937;
+  --bg-secondary: #111827fa;
+  --bg-third:#3b3c3d;
+  --bg-last:black;
+}
+
 
 body {
   height: 100vh;
-  background-color:black;
-  color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "outfit";
+  font-family:  "Amazon Ember", "Helvetica Neue", Helvetica, Arial, sans-serif
+Style;
 }
 
 code {

@@ -1,114 +1,136 @@
-.black-bg{
-    background-color: #222120;
+.black-bg {
+  background-color: #111827fa;
 }
 
-.white-bg{
-    background-color:white;
+.white-bg {
+  background-color: white;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px 50px;
-}
-.logo{
-    height: 150px;
-    width: 190px;
-}
-
-.nav-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 60px;
-    font-size: 18px;
+/* Scroll progress bar styles */
+.scroll-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 101.06%);
+  z-index: 1000;
+  transition: width 0.1s ease;
 }
 
-.nav-menu li:hover{
-    background: linear-gradient(267deg, #DA7C25 0.36% , #B923E1 101.06%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
-}
-
-.nav-connect{
-    padding: 20px 40px;
-    border-radius: 50px;
-    background: linear-gradient(267deg, #DA7C25 0.36% , #B923E1 101.06%);
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.nav-connect:hover{
-    transform: scale(1.05);
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
+  padding: 20px 80px;
+  transition: top 0.3s ease;
 }
 
-.nav-menu li{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-.nav-menu li img{
-    display: flex;
-    margin: auto;
+.nav-logo{
+    font-size:25px;
+    color: rgb(107, 109, 219);
 }
 
-.anchor-link{
-    text-decoration: none;
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 18px;
+}
+
+.nav-menu li:hover {
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 101.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.nav-menu li img {
+  display: flex;
+  margin: auto;
+}
+
+.anchor-link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-mob-close {
+  display: none;
+}
+
+.nav-mob-open {
+  display: none;
+}
+
+
+.white-color{
     color: white;
 }
 
-.nav-mob-close{
-    display: none;
+.black-color{
+    color: black;
 }
 
-.nav-mob-open{
-    display: none;
+.change-theme{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
 }
 
-@media (max-width:768px) {
-    .navbar{
-        margin: 10px;
-    }
-    .nav-connect{
-        display: none;
-    }
-    .nav-mob-open{
-        display: block;
-        right: 30px;
-        font-size: 30px;
-    }.nav-mob-close{
-        display: block; 
-        position: relative;
-        top: 30px;
-        left: 200px;
-        width: 30px;
-        font-size: 30px;
-    }
-    .nav-menu{
-        position: fixed;
-        flex-direction: column;
-        align-items: start;
-        top: 0;
-        gap: 30px;
-        background-color: #1f0016;
-        width: 250px;
-        height: 100%;
-        z-index: 1;
-        transition: right 0.5s;
-        right: -350px;
-    }
-    .nav-menu li{
-        font-size: 20px;
-        padding-left:50px ;
-        flex-direction: row;
-        gap: 20px;
-    }
-    .logo{
-        height: 90px;
-        width: 90px;
-    }
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+  .nav-connect {
+    display: none;
+  }
+  .nav-mob-open {
+    display: block;
+    right: 10px;
+    font-size: 30px;
+  }
+  .nav-mob-close {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 200px;
+    width: 30px;
+    font-size: 30px;
+  }
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    width: 250px;
+    height: 100%;
+    z-index: 1;
+    transition: right 0.5s;
+    right: -350px;
+    box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.3);
+
+  }
+  .nav-menu li {
+    font-size: 20px;
+    padding-left: 50px;
+    flex-direction: row;
+    gap: 20px;
+  }
+ 
 }

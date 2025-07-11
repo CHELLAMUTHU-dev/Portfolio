@@ -1,10 +1,10 @@
 .skills{
-    margin: 50px 80px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-items: center;
-    justify-content: center;
+    align-items: center;justify-content: center;
+    min-height: 100vh;
+    padding: 50px 80px;
 }
 
 .skills-title{
@@ -14,15 +14,14 @@
 
 .skills-title h1{
     padding: 0px 30px;
-    font-size: 75px;
+    font-size: 70px;
     font-weight: 500;
+    margin: 0;
 }
 .skills-title img{
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    right: 0;
-    height: 50px;
+    margin-left: 100px;
+    margin-top: -50px;
+    height: 35px;
 }
 
 .skills-list{
@@ -30,7 +29,7 @@
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     margin: 0px 40px 0px 80px;
 }
 
@@ -40,6 +39,8 @@
     display: flex;
     align-items: center;
     margin-right: 110px;
+    margin-bottom: 50px;
+
 }
 
 .frontend-technology{
@@ -48,9 +49,16 @@
     flex-wrap: wrap;
     transition: all 0.5s ease-in;
     margin-top: 15px;
+    
 }
 
 .backend-technology{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.tools{
     display: flex;
     flex-direction: row;
     margin-top: 15px;
@@ -65,7 +73,7 @@
     font-weight: 500;
 }
 .technology-name{
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .icon{
@@ -76,9 +84,26 @@
     display: none;
 }
 
+.skills-bg-black{
+    background-color: var(--bg-primary);
+    color: white;
+}
+
+.skills-bg-white{
+    background-color:var(--text-primary);
+    color: rgb(18, 17, 17);
+}
+
+.white{
+    color: white;
+}
+.black{
+    color: black;
+}
+
 @media(max-width:768px){
     .skills{
-        margin: 50px 0px 50px 70px;
+       
         align-items: start;
     }
     .skills-title{
@@ -90,7 +115,8 @@
     }
     .skills-title img{
         width: 90px;
-        right: -20px;
+        margin-left: 50px;
+        margin-top: -35px;
     }
     .skills-list{
         margin-left: 0;
@@ -102,7 +128,13 @@
     }
     .frontend-technology{
         flex-direction: column;
-        gap: 22px;
+        gap: 1px;
+        justify-content: space-between;
+    }
+
+    .tools{
+        flex-direction: column;
+        gap: 1px;
         justify-content: space-between;
     }
 
@@ -111,7 +143,7 @@
     }
     .backend-technology{
         flex-direction: column;
-        gap: 22px;
+        gap: 1px;
     }
     .backend-technology p{
         font-size: 15px;

@@ -2,11 +2,16 @@ import theme_pattern from "../../assets/theme_pattern.svg";
 import Bookhub from "../../assets/Bookhub.jpg";
 import Ecommerce from "../../assets/Ecommerce.jpg";
 import food_order from "../../assets/foor_order.png";
+import { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 
 import "./index.css";
 
-const Project = () => (
-  <div id="projects" className="projects">
+const Project = () => {
+  const {theme} = useContext(ThemeContext);
+  const bgColor = theme === "dark" ? "project-black-bg" : "project-white-bg";
+  return(
+  <div id="projects" className={`projects ${bgColor}`}>
     <div className="project-title">
       <h1>Projects</h1>
       <img src={theme_pattern} alt="" />
@@ -47,9 +52,9 @@ const Project = () => (
           <details>
             <summary>Show More</summary>
             <p>
-              E-commerce is a online Grocery purchase website.
-              It is a web application that allows users to search for grocery and
-              view their details.Its allows users to buy grocery products.
+              E-commerce is a online Grocery purchase website. It is a web
+              application that allows users to search for grocery and view their
+              details.Its allows users to buy grocery products.
             </p>
             <h3 style={{ marginTop: "20px" }}>user Data:</h3>
             <div>
@@ -68,10 +73,14 @@ const Project = () => (
           <img src={food_order} alt="" className="e-commerce" />
           <p className="project-name">Food Order</p>
           <details>
-             <summary>Show More</summary>
+            <summary>Show More</summary>
             <p>
-              FoodOrder is a online food order website to certain cuisines. It is a web application that allows users to search for food items and
-              view their details.In addition to that, it also allows users to place orders for food items.And users can also track their orders and make payment using razorpay. This website also has admin panel to add and remove food items.
+              FoodOrder is an online food order website for certain cuisines. It
+              is a web application that allows users to search for food items
+              and view their details.In addition to that, it also allows users
+              to place orders for food items. Users can also track their orders
+              and make payments using Razorpay. This website also features an
+              admin panel that allows you to add and remove food items.
             </p>
             <h3 style={{ marginTop: "20px" }}>user Data:</h3>
             <div>
@@ -83,6 +92,6 @@ const Project = () => (
       </li>
     </ul>
   </div>
-);
-
+)
+}
 export default Project;
