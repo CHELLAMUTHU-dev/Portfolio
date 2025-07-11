@@ -103,7 +103,7 @@
 
 @media(max-width:768px){
     .skills{
-       
+        padding: 30px 0px 0px 10px;
         align-items: start;
     }
     .skills-title{
@@ -119,8 +119,7 @@
         margin-top: -35px;
     }
     .skills-list{
-        margin-left: 0;
-        margin-right: 0px;
+        margin: 0px 0px 0px 0px;
     }
     .skills-list h1{
         font-size: 30px;
@@ -164,7 +163,7 @@
         justify-content: space-between;
         align-items: center;
         transition: 0.3s;
-        margin-left: 10px;
+        margin-left: 5px;
     }
     .linear-progress:hover{
         transform: scale(1.1);
@@ -176,11 +175,12 @@
         outline: none;
         height: 8px;
         border-radius: 50px;
-        margin-right: 20px;
+        margin-right: 5px;
         background: linear-gradient(264deg, #df8908 -5.09% , #b415ff 106.25%);
     }
     .linear-progress p{
         font-size: 18px;
+        max-width: 10px;
     }
     .skill-type{
         margin-right: 0px;

@@ -140,7 +140,7 @@
 @media (max-width:768px){
     .contact{
         gap: 60px;
-        padding: 50px 70px;
+        padding: 50px 30px;
         align-items: start;
     }
 
@@ -163,7 +163,7 @@
     }
     .contact-left p{
         font-size: 16px;
-        width: 350px;
+        width: 300px;
     }
     .contact-left a{
         font-size: 15px;
