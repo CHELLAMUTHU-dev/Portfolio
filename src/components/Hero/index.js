@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import profile from '../../assets/profile.jpg'
+import profile from '../../assets/profile.png'
 import resume from '../../assets/resume.pdf'
 import { FaDownload ,FaWhatsapp ,FaGithub,FaLinkedin  } from "react-icons/fa";
 
@@ -63,7 +63,7 @@ const Hero = () => {
         <div className="hero-content">
             <h1>Hi, I'm Chellamuthumari</h1>
             <h2>Full Stack Developer (Fresher) with hands-on experience in building web applications using the MERN stack</h2>
-            <p>Passionate about solving real-world problems through technology. Specialized in React, Node JS and responsive design. Looking forward to starting my professional journey in a forward-thinking organization </p>
+            <p>Passionate about solving real-world problems through technology. Specialized in React.js, Node.js, Express.js and responsive design. Looking forward to starting my professional journey in a forward-thinking organization </p>
             <div className="hero-action">
                 <div className="hero-connect">
                 <AnchorLink className='anchor-link' offset={50} href='#contact'>

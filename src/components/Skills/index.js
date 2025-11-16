@@ -14,6 +14,8 @@ import github from '../../assets/github.svg'
 import vscode from '../../assets/vscode.svg'
 import postman from '../../assets/postman.svg'
 import bootstrap from '../../assets/bootstrap.svg'
+import type_script from '../../assets/type_script.svg'
+import next_js from '../../assets/next_js.svg'
 import {ThemeContext} from '../../context/ThemeContext'
 import './index.css'
 
@@ -107,15 +109,65 @@ const Skills = () => {
                     </div>
                     <div className="skill-type">
                         <div className="logo-container">
-                            <img src={react} alt="" className='icon'/>           
-                            <p>React JS</p>
+                            <img src={type_script} alt="" className='icon'/>           
+                            <p>TypeScript</p>
                         </div>
                         <div className='linear-progress'>
                             <hr style={{width:"130px"}}/>
                             <p>80%</p>
                         </div>
                         <div style={{ width: 70, height: 70 }} className='circular-bar'>
-                            <CircularProgressbar value={80} text='80%' styles={{
+                            <CircularProgressbar value={60} text='60%' styles={{
+                                path: {
+                                    stroke:'#b415ff',
+                                    },
+                                trail: {
+                                    stroke: 'transparent',
+                                    strokeLinecap: 'red',
+                                    },
+                                text: {
+                                    fill: theme === 'dark' ? 'white' : 'black',
+                                    fontSize: '20px',
+                                }}}
+                            />
+                        </div>
+                    </div>
+                    <div className="skill-type">
+                        <div className="logo-container">
+                            <img src={react} alt="" className='icon'/>           
+                            <p>React.js</p>
+                        </div>
+                        <div className='linear-progress'>
+                            <hr style={{width:"130px"}}/>
+                            <p>80%</p>
+                        </div>
+                        <div style={{ width: 70, height: 70 }} className='circular-bar'>
+                            <CircularProgressbar value={90} text='90%' styles={{
+                                path: {
+                                    stroke:'#b415ff',
+                                    },
+                                trail: {
+                                    stroke: 'transparent',
+                                    strokeLinecap: 'red',
+                                    },
+                                text: {
+                                    fill: theme === 'dark' ? 'white' : 'black',
+                                    fontSize: '20px',
+                                }}}
+                            />
+                        </div>
+                    </div>
+                    <div className="skill-type">
+                        <div className="logo-container">
+                            <img src={next_js} alt="" className='icon'/>           
+                            <p>Next.js</p>
+                        </div>
+                        <div className='linear-progress'>
+                            <hr style={{width:"130px"}}/>
+                            <p>80%</p>
+                        </div>
+                        <div style={{ width: 70, height: 70 }} className='circular-bar'>
+                            <CircularProgressbar value={60} text='60%' styles={{
                                 path: {
                                     stroke:'#b415ff',
                                     },

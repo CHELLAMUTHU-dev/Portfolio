@@ -62,7 +62,7 @@ const Contact = () =>  {
                                 <BsLinkedin/><a href="https://www.linkedin.com/in/chellamuthumarip/" style={{color: theme === "dark" ? "white" : "black"}} target="_blank" rel='noreferrer'>https://www.linkedin.com/in/chellamuthumarip</a>
                         </div>
                         <div className="contact-detail">
-                                <FaGithub/><a href="https://github.com/" target="_blank" rel='noreferrer' style={{color: theme === "dark" ? "white" : "black"}}>https://github.com</a>
+                                <FaGithub/><a href="https://github.com/CHELLAMUTHU-dev" target="_blank" rel='noreferrer' style={{color: theme === "dark" ? "white" : "black"}}>https://github.com/CHELLAMUTHU-dev</a>
                         </div>
                         <div className="contact-detail">
                                 <MdLocationPin/><p>Tirumangalam , Madurai, TamilNadu </p>

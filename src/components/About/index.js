@@ -1,8 +1,9 @@
 import {useContext} from 'react'
 import theme_pattern from '../../assets/theme_pattern.svg'
-import profile from '../../assets/profile.jpg'
+import profile from '../../assets/profile.png'
 import {ThemeContext} from '../../context/ThemeContext'
-import './index.css'
+import './index.css';
+
 
 
 
@@ -32,10 +33,10 @@ const About = () => {
                             <h1>Fresher</h1>
                             <p>Experience</p>
                         </div>
-                        <div className="details">
+                        {/* <div className="details">
                             <h1>100% </h1>
                             <p>Client Satisfaction</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -1,125 +1,92 @@
-.projects{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 50px 150px 80px 150px;
-    min-height: 100vh;
+.projects {
+  padding: 50px;
+  text-align: center;
 }
 
-.project-title{
-    position: relative;
-    align-self: center;
+.project-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-.project-title h1{
-    padding: 0px 30px;
-    font-size: 70px;
-    font-weight: 500;  
+.project-title h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+  @media (max-width:768px) {
+    font-size: 46px;
+  }
 }
 
 .project-title img{
-    margin-left: 180px;
-    margin-top: -30px;
+     margin-left: 220px;
+    margin-top: -28px;
     height: 40px;
+    @media (max-width:768px) {
+         width: 80px;
+        margin-left: 130px;
+    }
 }
 
-.project-list{
-    display: flex;
-    justify-content: flex-start;
-    gap: 60px;
-    list-style: none;
+.project-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+  text-align: center;
+  margin: 10px;
 }
 
-.project{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    outline: none;
-    width: 360px;
-    height: 100%;
-    border-radius: 8px;
-    padding: 0px 0px 20px 0px;
-    transition: all 0.1s ease-in-out;
-    box-shadow: 2px 2px 5px   #c8c6c8;
-}
-.project:hover{
-    transform: scale(1.05);
-    box-shadow: -2px -2px 25px 2px #ff00ff;}
-
-.project a{
-    text-decoration: none;
-    color: inherit;
-    }
-
-.project-name{
-    font-size: 35px;
-    font-weight: 600;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    background: linear-gradient(270deg , #df8908 80%,#b415ff 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-left: 20px;
-}
-.user-data{
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 8px;
-    }
-.book-hub{
-    height: 300px;
-    width: 360px;
-    border-radius: 8px;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-
-.e-commerce{
-    height: 300px;
-    width: 360px;
-    border-radius: 8px;
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-details{
-    margin-left: 20px;
-}
-summary{
-    margin-bottom: 20px;
-}
-
-.project-black-bg{
-    background-color: var(--bg-secondary);
-    color: white;
+.project-card h3 {
+  margin: 15px 0;
+  color: #333;
+  font-size: 1.2rem;
 }
 
-@media (max-width: 768px) {
-    .projects{
-        padding: 60px 0px 60px 70px;
-        align-items: start;
-    }
-    .project-title{
-        align-self: flex-start;
-    }
-    .project-title h1{
-        font-size: 46px;
-        padding: 0;
-    }
-    .project-title img{
-        width: 100px;
-        margin-left: 100px;
-    }
-    .project-list{
-        flex-direction: column;
-        align-items: center;
-    }
-    .project{
-        width: 100%;
-        max-width: 250px;
-    }
-    .book-hub, .e-commerce{
-        height: 250px;
-        width: 100%;
-    }
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.carousel-container {
+  padding: 0 20px;
+}
+
+.project-black-bg {
+  background: #111;
+  color: #fff;
+}
+
+.project-white-bg {
+  background: #fafafa;
+  color: #000;
+}
+.carousel-container {
+  overflow: hidden; /* 👈 important to hide overflow */
+  padding: 0;
+  margin: 0;
+}
+.react-multiple-carousel__arrow {
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.react-multiple-carousel__arrow--left {
+  left: 10px;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: 10px;
 }
